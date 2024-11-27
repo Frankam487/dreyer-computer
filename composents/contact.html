@@ -6,116 +6,27 @@
     <title>Contact - Dépannage Informatique</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/contact.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-        header {
-            background-color: #343a40;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .contact-section {
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .contact-info {
-            margin-top: 40px;
-        }
-
-        .contact-info h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: #555;
-        }
-
-        .map-container {
-            margin-top: 50px;
-            width: 100%;
-            height: 400px;
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        .btn-contact {
-            margin-top: 30px;
-            background-color: #007bff;
-            color: white;
-            font-size: 1.2rem;
-            padding: 15px 25px;
-            border: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-contact:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-
-        /* Animation for the map */
-        .map-container {
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Floating contact button */
-        .floating-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #28a745;
-            color: white;
-            border-radius: 50%;
-            padding: 20px;
-            font-size: 2rem;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .floating-btn:hover {
-            background-color: #218838;
-            transform: scale(1.1);
-        }
-
-    </style>
 </head>
 <body>
+
+    <!-- icons -->
 
 <!-- Navbar -->
 <header>
     <h1>Contactez-nous</h1>
 </header>
+
+<div class="icons">
+    <i class="bi bi-facebook"></i> 
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-phone"></i>
+</div>
 
 <!-- Contact Section -->
 <section class="contact-section container">
@@ -131,11 +42,12 @@
 
     <!-- Google Maps Embed Section -->
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.358465775534!2d2.292292315674618!3d48.85884427928759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671f1f06a0f01%3A0xd70f41d913897b2!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1597338137314!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126732.25263243858!2d10.3661654!3d5.9632922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10c2501dbcb06b1b%3A0x39baf8e7d8fe0d6!2sBafoussam!5e0!3m2!1sfr!2scm!4v1697856856377!5m2!1sfr!2scm" allowfullscreen="" loading="lazy"></iframe>
+
     </div>
 
     <!-- Contact Button -->
-    <a href="mailto:fkamgang06@gmail.com" class="btn-contact">Envoyez-nous un message</a>
+    <a href="mailto:fkamgang06@gmail.com" class="btn-contact" style="margin: 12px 2px;">Envoyez-nous un message</a>
 </section>
 
 <!-- Floating Button for quick contact -->
