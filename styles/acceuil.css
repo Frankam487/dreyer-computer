@@ -94,3 +94,26 @@
    .filter-section input {
      margin-bottom: 10px;
    }
+
+     .icons {
+       /* background-color: red; */
+       margin: 20% 0;
+       position: fixed;
+       display: flex;
+       flex-direction: column;
+       padding: 0 12px;
+     }
+  
+     .icons i {
+       margin: 12px;
+       cursor: pointer;
+       transition: .2s ease-in-out;
+       font-size: 1.5rem;
+       color: #007bffe6;
+       z-index: 12;
+     }
+  
+     .icons i:hover {
+       padding: 5px;
+  
+     }
