@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit - Ajouter au Panier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-details {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn-add-to-cart {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-add-to-cart:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Overlay (sombre) */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Information Card */
+        .info-card {
+            background-color: #fff;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .info-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .info-card a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        /* Animation for the info card */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background-color: #cc0000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <h1>Produit Phare - Clavier sans fil <i style="color: aquamarine;">!!!</i></h1>
+</header>
+
+<!-- Product Details Section -->
+<section class="product-details">
+    <h2>Découvrez le clavier sans fil de qualité supérieure  <i style="color: rgb(94, 170, 214);">!</i></h2>
+    <p style="width: 50%; margin: 40px auto; text-align: 'center'; background: #dee4e9e6; box-shadow: 10px 10px 10px -4px black; padding: 15px 12px; font-weight: 600; font-size: 1.2rem; word-spacing: 5px;">
+
+Chez <b style="color: #0056b3; background: #f4f4f9;">Dreyer'S Computer</b> , Vous en avez assez des câbles encombrants et des contraintes de mouvement ? Passez au clavier sans fil et profitez d'une expérience de frappe fluide, confortable et moderne.
+
+Pourquoi choisir notre clavier sans fil ?
+
+Confort et ergonomie : Conçu pour un usage prolongé, avec une frappe silencieuse et agréable.
+Autonomie longue durée : Profitez d'une batterie qui dure des mois sans avoir à vous soucier des recharges fréquentes.
+Connexion sans faille : Technologie sans fil fiable avec portée étendue, compatible avec tous vos appareils.
+Design élégant et compact : Un clavier élégant qui s'adapte parfaitement à votre espace de travail.
+Ne laissez pas les câbles vous ralentir. Offrez à votre bureau un look épuré et fonctionnel avec ce clavier sans fil de haute qualité à un prix compétitif.
+
+Commandez maintenant et améliorez votre confort de travail dès aujourd'hui !</p>
+    
+
+    <!-- Add to Cart Button -->
+    <button class="btn-add-to-cart" onclick="showInfoCard()">Nous Joindre</button>
+</section>
+
+<!-- Overlay with Info Card -->
+<div id="overlay" class="overlay">
+    <div class="info-card">
+        <button class="close-btn" onclick="closeInfoCard()">×</button>
+        <h4>Propriétaire du site</h4>
+        <p><strong>Nom :</strong>Dreyer's Computer</p>
+        <p><strong>Email :</strong> <a href="mailto:contact@depannageinformatique.fr">dreyer'sComputer@gmail.com</a></p>
+        <h5>Adresse: <i>Sens Interdit-Bafoussam</i></h5>
+        <p><strong>Téléphone :</strong>+237 697 47 57 00</p>
+    </div>
+</div>
+
+<script>
+    
+    function showInfoCard() {
+        document.getElementById("overlay").style.display = "flex";
+    }
+
+    function closeInfoCard() {
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
