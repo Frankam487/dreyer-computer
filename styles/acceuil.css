@@ -1,33 +1,94 @@
- body {
-   padding-top: 50px;
- }
+   body {
+     padding-top: 50px;
+   }
 
- .product-card {
-   border: 1px solid #ddd;
-   border-radius: 5px;
-   padding: 20px;
-   margin-bottom: 30px;
-   text-align: center;
-   transition: all 0.3s ease;
- }
+   .hero {
+     background: url(../images/technician-5146209.jpg)center/cover;
+     background-size: cover;
+     background-position: center;
+     color: white;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 0 10px;
+   }
 
- .product-card:hover {
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   transform: translateY(-5px);
- }
+   .hero h1 {
+     font-size: 3em;
+     font-weight: bold;
+   }
 
- .product-card img {
-   width: 100%;
-   height: 200px;
-   object-fit: cover;
-   border-radius: 5px;
- }
+   .hero p {
+     font-size: 1.2em;
+   }
 
- .filter-section {
-   margin-bottom: 30px;
- }
+   .service-card {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 20px;
+     text-align: center;
+     transition: all 0.3s ease;
+     background-color: #f9f9f9;
+   }
 
- .filter-section select,
- .filter-section input {
-   margin-bottom: 10px;
- }
+   .service-card:hover {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transform: translateY(-5px);
+   }
+
+   .service-card i {
+     font-size: 3em;
+     color: #007bff;
+   }
+
+   .product-card img {
+     width: 100%;
+     height: 150px;
+     object-fit: cover;
+     border-radius: 5px;
+   }
+
+   .product-card {
+     margin-bottom: 20px;
+     text-align: center;
+     transition: all 0.3s ease;
+   }
+
+   .product-card:hover {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transform: translateY(-5px);
+   }
+
+
+   .product-card {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 20px;
+     margin-bottom: 30px;
+     text-align: center;
+     transition: all 0.3s ease;
+
+   }
+
+   .product-card:hover {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transform: translateY(-5px);
+   }
+
+   .product-card img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+     border-radius: 5px;
+   }
+
+   .filter-section {
+     margin-bottom: 30px;
+   }
+
+   .filter-section select,
+   .filter-section input {
+     margin-bottom: 10px;
+   }

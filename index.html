@@ -3,78 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Dépannage Informatique et Vente d'Outils</title>
+    <!-- Encodage des caractères -->
+    <meta charset="UTF-8">
+    
+    <!-- Description du site (important pour le SEO) -->
+    <meta name="description" content="Votre description courte et pertinente ici. Ex : 'Découvrez des articles sur le développement web, les tendances technologiques et plus encore.'">
+    
+    <!-- Mots-clés pour le SEO (même si cet élément n'a plus le même poids qu'auparavant, il peut encore être utile) -->
+    <meta name="keywords" content="développement web, SEO, technologies, programmation, HTML, CSS, JavaScript">
+    
+    <!-- Auteur du site -->
+    <meta name="author" content="Votre Nom ou Votre Entreprise">
+    
+    <!-- Vueport pour la version mobile (essentiel pour le responsive design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Robots - directives pour les moteurs de recherche -->
+    <meta name="robots" content="index, follow"> <!-- Permet à Google d'indexer la page et de suivre les liens -->
+
+    <!-- Open Graph pour le partage sur les réseaux sociaux -->
+    <meta property="og:title" content="Titre de la page que vous souhaitez partager">
+    <meta property="og:description" content="Service de dépannage informatique rapide et vente d'outils informatiques de qualité. Réparez vos ordinateurs et équipements, achetez des accessoires et logiciels professionnels.">
+    <meta property="og:image" content="URL de l'image de partage">
+    <meta property="og:url" content="URL complète de la page">
+    
+    <!-- Twitter Cards pour le partage sur Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Titre de la page sur Twitter">
+    <meta name="twitter:description" content="Service de dépannage informatique rapide et vente d'outils informatiques de qualité. Réparez vos ordinateurs et équipements, achetez des accessoires et logiciels professionnels.">
+    <meta name="twitter:image" content="URL de l'image de partage sur Twitter">
+    
+    <!-- Favicon du site -->
+    <link rel="icon" href="chemin/vers/favicon.ico" type="image/x-icon">
+    
+    <!-- Titres de la page -->
+    <title>Votre titre optimisé pour le SEO</title>
+    
+    <!-- Lien vers les fichiers CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lien Canonique pour éviter le contenu dupliqué -->
+    <link rel="canonical" href="URL complète de la page">
+    <title>Dépannage Informatique et Vente d'Outils</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
     <link rel="icon" href="./images/1.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/acceuil.css">
-    <style>
-        body {
-            padding-top: 50px;
-        }
-        .hero {
-            background: url('./images/1.jpg') center/cover; 
-            background-size: cover;
-            background-position: center;
-            color: white;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 10px;
-        }
-        .hero h1 {
-            font-size: 3em;
-            font-weight: bold;
-        }
-        .hero p {
-            font-size: 1.2em;
-        }
-        .service-card {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-            background-color: #f9f9f9;
-        }
-        .service-card:hover {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transform: translateY(-5px);
-        }
-        .service-card i {
-            font-size: 3em;
-            color: #007bff;
-        }
-        .product-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .product-card {
-            margin-bottom: 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-        .product-card:hover {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transform: translateY(-5px);
-        }
-    </style>
+    
 </head>
 <body>
 
 <!-- Navbar -->
 <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Dépannage & Outils Informatiques</a>
+    <a class="navbar-brand" href="#">Dreyer'S Computer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Accueil</a>
+                <a class="nav-link" href="./index.html">Accueil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./composents/services.html">Nos Services</a>
@@ -148,7 +135,7 @@
         <!-- Product 2 -->
         <div class="col-md-3">
             <div class="product-card">
-                <img src="product2.jpg" alt="Produit 2">
+                <img src="/images/sign-7588449_1920.jpg" alt="Produit 2">
                 <h5>Antivirus Premium</h5>
                 <p>Protection complète contre les menaces numériques et les virus.</p>
                 <a href="./pages/produit2.html" class="btn btn-primary">Voir le produit</a>
@@ -158,22 +145,55 @@
         <!-- Product 3 -->
         <div class="col-md-3">
             <div class="product-card">
-                <img src="product3.jpg" alt="Produit 3">
+                <img src="./images/keyboard-154251_1920.png" alt="Produit 3">
                 <h5>Clavier Bluetooth</h5>
                 <p>Clavier sans fil haut de gamme pour un confort optimal.</p>
-                <button class="btn btn-primary">Voir le produit</button>
+                <a href="./pages/produit3.html" class="btn btn-primary">Voir le produit</a>
             </div>
         </div>
 
         <!-- Product 4 -->
         <div class="col-md-3">
             <div class="product-card">
+                <img src="./images/webcam-295440_1920.png" alt="Produit 4">
+                <h5>Webcam HD</h5>
+                <p>Caméra HD pour des appels vidéo de qualité supérieure.</p>
+                <a href="./pages/produit4.html" class="btn btn-primary">Voir le produit</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="./images/istockphoto-1370031469-1024x1024.jpg" alt="Produit 4">
+                <h5>Programmation</h5>
+                <p>Apprenez le developpement web et developper vous-meme des sites internet.</p>
+                <a href="./pages/produit5.html" class="btn btn-primary">Voir plus</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="./images/photoshop-873358_1920.png" alt="Produit 4">
+                <h5>Photoshop</h5>
+                <p>Apprenez Photoshop et creez vos maquettes.</p>
+                <a href="./pages/produit6.html" class="btn btn-primary">Voir le produit</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card">
                 <img src="product4.jpg" alt="Produit 4">
                 <h5>Webcam HD</h5>
                 <p>Caméra HD pour des appels vidéo de qualité supérieure.</p>
-                <button class="btn btn-primary">Voir le produit</button>
+                <a href="./pages/produit7.html" class="btn btn-primary">Voir le produit</a>
             </div>
         </div>
+        <div class="col-md-3">
+            <div class="product-card">
+                <img src="product4.jpg" alt="Produit 4">
+                <h5>Webcam HD</h5>
+                <p>Caméra HD pour des appels vidéo de qualité supérieure.</p>
+                <a href="./pages/produit8.html" class="btn btn-primary">Voir le produit</a>
+            </div>
+        </div>
+        
     </div>
 </section>
 

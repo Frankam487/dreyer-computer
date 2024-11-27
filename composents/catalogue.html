@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue - Outils Informatiques</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-       
-    </style>
+    <link rel="icon" href="../images/computerD2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/catalogue.css">
+    
 </head>
 <body>
 
 <!-- Navbar -->
 <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Dépannage & Outils Informatiques</a>
+    <a class="navbar-brand" href="#">Dreyer'S Computer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Accueil</a>
+                <a class="nav-link" href="../index.html">Accueil</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#catalogue">Catalogue</a>
+                <a class="nav-link" href="../composents/catalogue.html">Catalogue</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./depannage">Dépannage</a>
+                <a class="nav-link" href="../composents/depannage.html">Dépannage</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
+                <a class="nav-link" href="../composents/contact.html">Contact</a>
             </li>
         </ul>
     </div>
@@ -55,7 +54,7 @@
                 <input type="text" class="form-control" id="searchInput" placeholder="Rechercher un produit">
             </div>
             <div class="col-md-3">
-                <button class="btn btn-primary w-100" id="filterBtn">Filtrer</button>
+                <button class="btn btn-primary w-100" id="filterBtn">Rechercher</button>
             </div>
         </div>
     </div>
@@ -68,7 +67,7 @@
             <h5>Outil de Réparation d'Ordinateur</h5>
             <p>Réparez votre ordinateur facilement avec cet outil de qualité professionnelle.</p>
             <p><strong>Prix : 50€</strong></p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <a href="./contacter.html" class="btn btn-primary">Commander</a>
         </div>
 
         <!-- Product 2 -->
@@ -77,7 +76,7 @@
             <h5>Disque Dur SSD 500GB</h5>
             <p>Boostez la performance de votre ordinateur avec ce disque dur SSD rapide et fiable.</p>
             <p><strong>Prix : 120€</strong></p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <a href="./contacter.html" class="btn btn-primary">Commander</a>
         </div>
 
         <!-- Product 3 -->
@@ -86,7 +85,7 @@
             <h5>Antivirus 1 an</h5>
             <p>Protégez votre PC avec un antivirus performant pour 1 an.</p>
             <p><strong>Prix : 30€</strong></p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <a href="./contacter.html" class="btn btn-primary">Commander</a>
         </div>
 
         <!-- Product 4 -->
@@ -95,7 +94,7 @@
             <h5>Clavier Gaming RGB</h5>
             <p>Un clavier mécanique avec des touches RGB personnalisables pour les gamers.</p>
             <p><strong>Prix : 80€</strong></p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <a href="./contacter.html" class="btn btn-primary">Commander</a>
         </div>
 
         <!-- Product 5 -->
@@ -104,7 +103,7 @@
             <h5>RAM 16GB DDR4</h5>
             <p>Améliorez les performances de votre ordinateur avec cette mémoire DDR4 rapide.</p>
             <p><strong>Prix : 60€</strong></p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <a href="./contacter.html" class="btn btn-primary">Commander</a>
         </div>
 
         <!-- Product 6 -->
@@ -113,7 +112,7 @@
             <h5>Logiciel Photoshop</h5>
             <p>Le célèbre logiciel de retouche photo, parfait pour les professionnels et débutants.</p>
             <p><strong>Prix : 250€</strong></p>
-            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <a href="./contacter.html" class="btn btn-primary">Commander</a>
         </div>
     </div>
 </section>
@@ -126,42 +125,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-    // Filtrer les produits selon la catégorie et la recherche
-    document.getElementById('filterBtn').addEventListener('click', function() {
-        const category = document.getElementById('categoryFilter').value.toLowerCase();
-        const searchText = document.getElementById('searchInput').value.toLowerCase();
-        const products = document.querySelectorAll('.product-card');
-
-        products.forEach(function(product) {
-            const productCategory = product.getAttribute('data-category').toLowerCase();
-            const productTitle = product.querySelector('h5').textContent.toLowerCase();
-
-            if (
-                (category === '' || productCategory.includes(category)) &&
-                (searchText === '' || productTitle.includes(searchText))
-            ) {
-                product.style.display = 'block';
-            } else {
-                product.style.display = 'none';
-            }
-        });
-    });
-     function filterProducts() {
-        var selectedCategory = document.getElementById("categorySelect").value;
-        var productItems = document.getElementsByClassName("product-item");
-
-        for (var i = 0; i < productItems.length; i++) {
-            var productCategory = productItems[i].getAttribute("data-category");
-
-            if (selectedCategory === "all" || selectedCategory === productCategory) {
-                productItems[i].style.display = "block";
-            } else {
-                productItems[i].style.display = "none";
-            }
-        }
-    }
-</script>
+<script src="../app.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,63 @@
+body {
+  padding-top: 50px;
+}
+
+.product-header {
+  background-image: url('product-header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.product-header h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.product-header p {
+  font-size: 1.5em;
+}
+
+.product-details {
+  margin-top: 30px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-description {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.btn-custom {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+.reviews-section {
+  margin-top: 40px;
+}
+
+.review {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
