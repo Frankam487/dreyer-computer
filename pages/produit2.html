@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réparation d'Ordinateur - Dépannage Informatique</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .product-header {
+            background-image: url('product-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .product-header h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .product-header p {
+            font-size: 1.5em;
+        }
+        .product-details {
+            margin-top: 30px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-description {
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .reviews-section {
+            margin-top: 40px;
+        }
+        .review {
+            border-top: 1px solid #ddd;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Dépannage & Outils Informatiques</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Nos Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#catalogue">Catalogue</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-- Product Header Section -->
+<section class="product-header">
+    <div>
+        <h1>Réparation d'Ordinateur</h1>
+        <p>Un service rapide et fiable pour réparer votre ordinateur à des prix abordables.</p>
+    </div>
+</section>
+
+<!-- Product Details Section -->
+<section class="container product-details">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Product Image -->
+            <img src="../images/images.jpg" alt="Réparation d'Ordinateur" class="product-image">
+        </div>
+        <div class="col-md-6">
+            <!-- Product Information -->
+            <h3>Description du Produit</h3>
+            <p class="product-description">Notre service de réparation d'ordinateur est conçu pour résoudre tous vos problèmes informatiques, qu'ils soient matériels ou logiciels. Nous offrons un diagnostic gratuit et une réparation rapide, quel que soit le problème : panne de disque dur, carte mère défectueuse, écran cassé ou réparation logicielle.</p>
+
+            <h4>Caractéristiques :</h4>
+            <ul>
+                <li>Réparation des pannes matérielles (disque dur, carte mère, etc.)</li>
+                <li>Réparation des pannes logicielles (système d'exploitation, drivers, etc.)</li>
+                <li>Diagnostic gratuit sur place</li>
+                <li>Service rapide (réparation en 24-48h)</li>
+                <li>Garantie de réparation</li>
+            </ul>
+
+            <p class="price">Prix : 99,99 €</p>
+
+            <a href="../contacter.html" class="btn btn-custom">Ajouter au Panier</a>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Reviews Section -->
+<section class="container reviews-section">
+    <h3>Avis Clients</h3>
+    
+    <!-- Review 1 -->
+    <div class="review">
+        <h5>Jean Dupont - <small>5 étoiles</small></h5>
+        <p>Le service de réparation a été rapide et efficace. Mon ordinateur fonctionne comme neuf maintenant. Très satisfait du travail !</p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review">
+        <h5>Marie Martin - <small>4 étoiles</small></h5>
+        <p>La réparation a pris un peu plus de temps que prévu, mais la qualité du service était excellente. Je recommande vivement !</p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review">
+        <h5>Luc Boucher - <small>5 étoiles</small></h5>
+        <p>Très professionnel et à l'écoute. Ils ont réparé mon PC en un temps record. Service au top !</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Dépannage Informatique. Tous droits réservés.</p>
+    <p><a href="mailto:contact@depannageinformatique.fr" class="text-white">contact@depannageinformatique.fr</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
