@@ -107,12 +107,24 @@
             font-size: 1.2rem;
             cursor: pointer;
             transition: all 0.3s ease;
+            animation: popUp;
             
         }
 
         .close-btn:hover {
             background-color: #cc0000;
             transform: scale(1.1);
+        }
+         @keyframes popUp {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
