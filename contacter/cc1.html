@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Services Informatique - Résolution de Problèmes</title>
+  <!-- Lien vers le CDN de Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     /* Reset de marges et padding */
     * {
@@ -23,7 +25,6 @@
       justify-content: center;
       align-items: center;
       animation: backgroundMove 3s infinite alternate;
-      overflow: hidden;
     }
 
     .header {
@@ -31,12 +32,7 @@
       margin-bottom: 2rem;
       animation: fadeIn 2s ease-in-out;
     }
-@media screen and (max-width: 900px) {
-  .header h1{
-    
-    font-size: 1rem;
-  }
-}
+
     .header h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
@@ -106,7 +102,8 @@
 
     .popup-container {
       background-color: white;
-      width: 400px;
+      width: 100%;
+      max-width: 400px;
       padding: 30px;
       border-radius: 15px;
       text-align: center;
@@ -177,9 +174,37 @@
       }
     }
 
+    /* Ajout de la classe responsive */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem; /* Réduction de la taille de l'en-tête sur mobile */
+      }
+
+      .header p {
+        font-size: 1rem; /* Réduction de la taille du texte */
+      }
+
+      .section h2 {
+        font-size: 1.5rem; /* Ajustement des titres */
+      }
+
+      .section p {
+        font-size: 1rem;
+      }
+
+      .button {
+        padding: 12px 25px; /* Réduction de la taille du bouton */
+        font-size: 1rem;
+      }
+
+      .popup-container {
+        padding: 20px; /* Réduction de la taille de la pop-up sur mobile */
+      }
+    }
+
   </style>
 </head>
-<body>
+<body class="container">
 
   <div class="header">
     <h1>Nous Résolvons Tous Vos Problèmes Informatiques</h1>
@@ -203,28 +228,25 @@
   <div class="popup-overlay">
     <div class="popup-container">
       <h2>Informations du propriétaire</h2>
-      <p><strong>Nom :</strong>Dreyer'S Computer</p>
-      <p><strong>Email :</strong> fkamgang06@gmail.com</p>
-      <p><strong>Téléphone :</strong> +237 697 47 57 00 </p>
+      <p><strong>Nom :</strong> Dreyer'S Computer</p>
+      <p><strong>Email :</strong> <a href="malto:fkamgang06@gmail.com">fkamgang06@gmail.com</a></p>
+      <p><strong>Téléphone :</strong> +237 697 47 57 00</p>
       <p><strong>Adresse :</strong> Bafoussam - Sens Interdit</p>
       <button class="close-btn" onclick="closePopup()">Fermer</button>
     </div>
   </div>
 
   <script>
-    
     const popupOverlay = document.querySelector('.popup-overlay');
 
-    
     function openPopup() {
       popupOverlay.style.display = 'flex';
     }
 
-        function closePopup() {
+    function closePopup() {
       popupOverlay.style.display = 'none';
     }
 
-    
     window.addEventListener('click', (e) => {
       if (e.target === popupOverlay) {
         closePopup();
@@ -232,5 +254,9 @@
     });
   </script>
 
+  <!-- Lien vers le CDN de Bootstrap JS (optionnel pour les composants dynamiques) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
