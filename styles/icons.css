@@ -8,8 +8,9 @@
  }
 
  .icons {
+  /* background-color: red; */
    position: fixed;
-   top: 10%;
+   top: 35%;
    left: 10px;
    transform: translateY(-50%);
    z-index: 100;
@@ -26,7 +27,9 @@
    color: #007bff;
    transition: transform 0.3s ease, color 0.3s ease;
  }
-
+*{
+  /* border: 1px solid red; */
+}
  .icons a i:hover {
    transform: scale(1.2) rotate(15deg);
    color: #ff5722;
