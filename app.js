@@ -10,6 +10,7 @@ document.getElementById('filterBtn').addEventListener('click', function () {
     const productCategory = product.getAttribute('data-category').toLowerCase();
     const productTitle = product.querySelector('h5').textContent.toLowerCase();
 
+    
     if (
       (category === '' || productCategory.includes(category)) &&
       (searchText === '' || productTitle.includes(searchText))
